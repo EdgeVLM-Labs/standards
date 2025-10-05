@@ -19,7 +19,7 @@ set -Eeuo pipefail
 # ==============================================================
 
 ORG="EdgeVLM-Labs"
-REF="${1:-main}"
+REF="main"
 BASE_URL="https://raw.githubusercontent.com/${ORG}/standards/${REF}"
 
 echo "🔄 Syncing standards from $ORG@$REF ..."
