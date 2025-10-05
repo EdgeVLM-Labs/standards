@@ -34,6 +34,8 @@ curl -sSL "${BASE_URL}/shared/pre-commit/.pre-commit-config.yaml" \
   -o .pre-commit-config.yaml
 curl -sSL "${BASE_URL}/shared/pyproject.toml" \
   -o pyproject.toml
+
+mkdir -p .github/workflows
 curl -sSL "${BASE_URL}/shared/workflows/ci.yml" \
   -o .github/workflows/ci.yml
 
