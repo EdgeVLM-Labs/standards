@@ -46,6 +46,7 @@ compare_file "shared/.editorconfig" ".editorconfig"
 compare_file "shared/.gitignore_global" ".gitignore"
 compare_file "shared/pre-commit/.pre-commit-config.yaml" ".pre-commit-config.yaml"
 compare_file "shared/pre-commit/pyproject.toml" "pyproject.toml"
+compare_file "shared/workflows/ci.yml" ".github/workflows/ci.yml"
 
 if [[ "$FAIL" -eq 0 ]]; then
   echo "🎯 All configuration files match canonical standards."
