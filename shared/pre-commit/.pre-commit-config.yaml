@@ -39,6 +39,6 @@ repos:
 
   # Enforce file/folder naming (snake_case for both)
   - repo: https://github.com/EdgeVLM-Labs/standards
-    rev: v1.0.3
+    rev: main
     hooks:
       - id: check-names
