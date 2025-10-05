@@ -32,6 +32,8 @@ curl -sSL "${BASE_URL}/shared/.gitignore_global" \
   -o .gitignore
 curl -sSL "${BASE_URL}/shared/pre-commit/.pre-commit-config.yaml" \
   -o .pre-commit-config.yaml
+curl -sSL "${BASE_URL}/shared/pyproject.toml" \
+  -o pyproject.toml
 
 echo "✅ Standards synced successfully from $ORG@$REF"
 
