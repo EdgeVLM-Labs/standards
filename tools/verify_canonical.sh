@@ -19,7 +19,7 @@ set -Eeuo pipefail
 # ==============================================================
 
 ORG="EdgeVLM-Labs"
-REF="${1:-main}"
+REF="main"
 FAIL=0
 
 echo "🔍 Verifying local configs against $ORG@$REF ..."
