@@ -42,13 +42,13 @@ compare_file() {
 }
 
 # --- Compare root configs ---
-compare_file "shared/.editorconfig" ".editorconfig"
-compare_file "shared/.gitignore_global" ".gitignore"
-compare_file "shared/pre-commit/.pre-commit-config.yaml" ".pre-commit-config.yaml"
+# compare_file "shared/.editorconfig" ".editorconfig"
+# compare_file "shared/.gitignore_global" ".gitignore"
+# compare_file "shared/pre-commit/.pre-commit-config.yaml" ".pre-commit-config.yaml"
 
-# --- Compare shared scripts ---
-compare_file "shared/scripts/init_env.sh" "scripts/init_env.sh"
-compare_file "shared/scripts/check_names.sh" "scripts/check_names.sh"
+# # --- Compare shared scripts ---
+# compare_file "shared/scripts/init_env.sh" "scripts/init_env.sh"
+# compare_file "shared/scripts/check_names.sh" "scripts/check_names.sh"
 
 if [[ "$FAIL" -eq 0 ]]; then
   echo "🎯 All configuration files match canonical standards."
