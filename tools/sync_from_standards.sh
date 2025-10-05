@@ -42,3 +42,7 @@ curl -sSL "${BASE_URL}/shared/scripts/check_names.sh" \
 chmod +x scripts/*.sh
 
 echo "✅ Standards synced successfully from $ORG@$REF"
+
+
+# command:
+# bash <(curl -sSL https://raw.githubusercontent.com/EdgeVLM-Labs/standards/main/tools/sync_from_standards.sh) v1.0.0

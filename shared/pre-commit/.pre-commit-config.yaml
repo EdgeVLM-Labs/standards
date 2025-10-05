@@ -38,10 +38,7 @@ repos:
     hooks: [{ id: markdownlint }]
 
   # Enforce file/folder naming (snake_case for both)
-  - repo: local
+  - repo: https://github.com/EdgeVLM-Labs/standards
+    rev: v1.0.0
     hooks:
       - id: check-names
-        name: Enforce snake_case names for files & folders
-        entry: bash shared/scripts/check_names.sh
-        language: system
-        pass_filenames: false
