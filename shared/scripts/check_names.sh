@@ -6,7 +6,7 @@ set -Eeuo pipefail
 is_exception() {
   case "$1" in
     .|./.|*/.|*/..|*/.git|*/.git/*|*/.gitignore_global|*/.venv/*|*/node_modules/*) return 0 ;;
-    */.gitignore|*/.editorconfig|*/pre-commit|*/.pre-commit-config.yaml) return 0 ;;
+    */.gitignore|*/.editorconfig|*/pre-commit|*/.pre-commit-config.yaml|./.pre-commit-hooks.yaml) return 0 ;;
     */README.md|*/LICENSE|*/CHANGELOG.md|*/CODEOWNERS) return 0 ;;
     *) return 1 ;;
   esac
