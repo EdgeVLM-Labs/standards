@@ -1,6 +1,6 @@
 - id: check-names
   name: Enforce snake_case names for files & folders
-  entry: bash shared/scripts/check_names.sh
+  entry: shared/scripts/check_names.sh
   language: script
   pass_filenames: false
   description: Ensure all file and folder basenames are snake_case, with standard exceptions.
