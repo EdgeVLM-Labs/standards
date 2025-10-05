@@ -16,8 +16,6 @@
 - .pre-commit-config.yaml
 - .env.example (if env-based)
 - README.md
-- scripts/init_env.sh (optional)
-- scripts/check_names.sh (enforce file/folder naming)
 
 ## Quality gates
 

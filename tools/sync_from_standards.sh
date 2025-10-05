@@ -33,14 +33,6 @@ curl -sSL "${BASE_URL}/shared/.gitignore_global" \
 curl -sSL "${BASE_URL}/shared/pre-commit/.pre-commit-config.yaml" \
   -o .pre-commit-config.yaml
 
-# --- Shared scripts ---
-mkdir -p scripts
-curl -sSL "${BASE_URL}/shared/scripts/init_env.sh" \
-  -o scripts/init_env.sh
-curl -sSL "${BASE_URL}/shared/scripts/check_names.sh" \
-  -o scripts/check_names.sh
-chmod +x scripts/*.sh
-
 echo "✅ Standards synced successfully from $ORG@$REF"
 
 
