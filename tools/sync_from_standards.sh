@@ -23,6 +23,7 @@ REF="${1:-main}"
 BASE_URL="https://raw.githubusercontent.com/${ORG}/standards/${REF}"
 
 echo "🔄 Syncing standards from $ORG@$REF ..."
+echo "   -> $BASE_URL"
 
 # --- Shared root configs ---
 curl -sSL "${BASE_URL}/shared/.editorconfig" \
