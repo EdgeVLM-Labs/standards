@@ -35,7 +35,9 @@ repos:
   # Markdown
   - repo: https://github.com/igorshubovych/markdownlint-cli
     rev: v0.45.0
-    hooks: [{ id: markdownlint }]
+    hooks:
+      - id: markdownlint
+        language_version: system
 
   # Enforce file/folder naming (snake_case for both)
   - repo: https://github.com/EdgeVLM-Labs/standards
